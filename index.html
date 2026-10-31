@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroCalm XR® — HCP Portal (Fictional Demo)</title>
+  <meta name="description" content="Prescribing information, dosing, and safety resources for NeuroCalm XR (fictional) for US healthcare professionals." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+
+  <!-- ============ 1. HCP DISCLAIMER BAR ============ -->
+  <div class="hcp-bar" id="hcpBar">
+    <p>This site is intended for <strong>US healthcare professionals only</strong>. NeuroCalm XR is a fictional product created for demo purposes.</p>
+    <button type="button" class="hcp-bar__close" id="hcpBarClose" aria-label="Dismiss notice">&times;</button>
+  </div>
+
+  <!-- ============ 2. HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="logo">Neuro<span>Calm</span>&nbsp;XR<sup>&reg;</sup></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        &#9776; Menu
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#clinical">Clinical Data</a></li>
+          <li><a href="#dosing">Dosing</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact" class="btn btn--small">Request a Rep</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 3. HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Fictional product &middot; Demo website</p>
+          <h1>NeuroCalm XR<sup>&reg;</sup></h1>
+          <p class="lead">
+            A once-daily, extended-release formulation for adults with moderate
+            neuropathic pain. Prescribing information, dosing, and safety data
+            for healthcare professionals.
+          </p>
+          <div class="hero__actions">
+            <a href="#dosing" class="btn">View Dosing</a>
+            <a href="#resources" class="btn btn--ghost">Download Resources</a>
+          </div>
+        </div>
+
+        <aside class="hero__card">
+          <h2 class="hero__card-title">At a glance</h2>
+          <ul class="facts">
+            <li><strong>Formulation</strong><span>50 mg &amp; 100 mg ER tablets</span></li>
+            <li><strong>Regimen</strong><span>Once daily with food</span></li>
+            <li><strong>Titration</strong><span>Start 50 mg, increase at 7 days</span></li>
+            <li><strong>Status</strong><span>Fictional / educational demo</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 4. ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">About NeuroCalm XR</h2>
+        <p class="section__sub">
+          A hypothetical extended-release agent designed to illustrate a typical
+          HCP-facing product page.
+        </p>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Mechanism</h3>
+            <p>Selective modulation of voltage-gated calcium channels (fictional
+               description for demonstration only).</p>
+          </article>
+          <article class="card">
+            <h3>Pharmacokinetics</h3>
+            <p>Extended-release matrix provides steady plasma concentrations over
+               24 hours with once-daily dosing.</p>
+          </article>
+          <article class="card">
+            <h3>Patient profile</h3>
+            <p>Adults 18 years or older with moderate neuropathic pain who have not
+               achieved adequate relief with standard therapy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. CLINICAL DATA (TABS) ============ -->
+    <section class="section section--alt" id="clinical">
+      <div class="container">
+        <h2 class="section__title">Clinical Data</h2>
+        <p class="section__sub">Summary of fictional phase 3 results.</p>
+
+        <div class="tabs">
+          <div class="tabs__list" role="tablist" aria-label="Clinical data">
+            <button class="tab-btn is-active" role="tab" id="tab-indications"
+                    aria-selected="true" aria-controls="panel-indications"
+                    data-tab="panel-indications">Indications</button>
+            <button class="tab-btn" role="tab" id="tab-efficacy"
+                    aria-selected="false" aria-controls="panel-efficacy"
+                    data-tab="panel-efficacy">Efficacy</button>
+            <button class="tab-btn" role="tab" id="tab-adverse"
+                    aria-selected="false" aria-controls="panel-adverse"
+                    data-tab="panel-adverse">Adverse Reactions</button>
+          </div>
+
+          <div class="tab-panel is-active" id="panel-indications" role="tabpanel" aria-labelledby="tab-indications">
+            <p>NeuroCalm XR is indicated for the management of moderate neuropathic
+               pain in adults when non-pharmacologic measures and standard
+               analgesics have provided insufficient relief.</p>
+            <ul class="checklist">
+              <li>Adults 18 years and older</li>
+              <li>Not studied in pediatric patients</li>
+              <li>Not indicated for acute pain</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="panel-efficacy" role="tabpanel" aria-labelledby="tab-efficacy">
+            <p>In a fictional 12-week, double-blind, placebo-controlled trial
+               (n = 842), patients receiving NeuroCalm XR reported a mean reduction
+               in pain intensity score of <strong>2.4 points</strong> versus
+               <strong>1.1 points</strong> with placebo (p &lt; 0.001).</p>
+            <p>Secondary endpoints showed improvements in sleep quality and
+               daily function. These figures are illustrative only.</p>
+          </div>
+
+          <div class="tab-panel" id="panel-adverse" role="tabpanel" aria-labelledby="tab-adverse">
+            <p>The most common adverse reactions (&ge;5% and greater than placebo)
+               in fictional trials were:</p>
+            <ul class="checklist">
+              <li>Dizziness (9%)</li>
+              <li>Somnolence (7%)</li>
+              <li>Nausea (6%)</li>
+              <li>Peripheral edema (5%)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. DOSING ============ -->
+    <section class="section" id="dosing">
+      <div class="container">
+        <h2 class="section__title">Dosing &amp; Administration</h2>
+        <p class="section__sub">Fictional dosing schedule for demonstration.</p>
+
+        <div class="table-wrap">
+          <table class="dose-table">
+            <caption class="sr-only">NeuroCalm XR dosing schedule</caption>
+            <thead>
+              <tr>
+                <th scope="col">Phase</th>
+                <th scope="col">Dose</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Initiation</td>
+                <td>50 mg</td>
+                <td>Once daily with food</td>
+                <td>7 days</td>
+              </tr>
+              <tr>
+                <td>Maintenance</td>
+                <td>100 mg</td>
+                <td>Once daily with food</td>
+                <td>Ongoing</td>
+              </tr>
+              <tr>
+                <td>Maximum</td>
+                <td>200 mg</td>
+                <td>Once daily with food</td>
+                <td>Ongoing</td>
+              </tr>
+              <tr>
+                <td>Renal impairment</td>
+                <td>50 mg max</td>
+                <td>Once daily with food</td>
+                <td>Ongoing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note">
+          <strong>Note:</strong> Swallow tablets whole. Do not crush, chew, or split.
+          Discontinue gradually to avoid withdrawal symptoms.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. SAFETY (ACCORDION) ============ -->
+    <section class="section section--alt" id="safety">
+      <div class="container">
+        <h2 class="section__title">Safety Information</h2>
+
+        <div class="isi">
+          <h3>Important Safety Information (Fictional)</h3>
+          <p><strong>Contraindications:</strong> Known hypersensitivity to
+             NeuroCalm XR or any of its excipients.</p>
+          <p><strong>Warnings and Precautions:</strong> May cause dizziness and
+             somnolence; advise patients not to drive until they know how the
+             drug affects them. Use with caution in patients with hepatic
+             impairment. Monitor for peripheral edema.</p>
+          <p>This content is fictional and must not be used for clinical decisions.</p>
+        </div>
+
+        <h3 class="subhead">Frequently Asked Questions</h3>
+
+        <div class="acc">
+          <div class="acc__item">
+            <button class="acc__btn" aria-expanded="false" aria-controls="acc-1">
+              Can NeuroCalm XR be taken with food? <span aria-hidden="true">+</span>
+            </button>
+            <div class="acc__panel" id="acc-1" hidden>
+              <p>Yes. Administer with food to improve tolerability and reduce the
+                 incidence of nausea.</p>
+            </div>
+          </div>
+
+          <div class="acc__item">
+            <button class="acc__btn" aria-expanded="false" aria-controls="acc-2">
+              What happens if a dose is missed? <span aria-hidden="true">+</span>
+            </button>
+            <div class="acc__panel" id="acc-2" hidden>
+              <p>If a dose is missed, take it as soon as remembered unless it is
+                 nearly time for the next dose. Do not double the dose.</p>
+            </div>
+          </div>
+
+          <div class="acc__item">
+            <button class="acc__btn" aria-expanded="false" aria-controls="acc-3">
+              Is dose adjustment needed in renal impairment? <span aria-hidden="true">+</span>
+            </button>
+            <div class="acc__panel" id="acc-3" hidden>
+              <p>Yes. A maximum dose of 50 mg once daily is recommended for patients
+                 with moderate renal impairment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. RESOURCES ============ -->
+    <section class="section" id="resources">
+      <div class="container">
+        <h2 class="section__title">Resources for HCPs</h2>
+        <div class="grid grid--3">
+          <article class="card card--link">
+            <h3>Prescribing Information</h3>
+            <p>Full fictional prescribing information (PDF).</p>
+            <a href="#" class="link" onclick="return false;">Download &rarr;</a>
+          </article>
+          <article class="card card--link">
+            <h3>Patient Counseling Guide</h3>
+            <p>Talking points for the first prescription conversation.</p>
+            <a href="#" class="link" onclick="return false;">Download &rarr;</a>
+          </article>
+          <article class="card card--link">
+            <h3>Dosing Card</h3>
+            <p>Quick-reference titration schedule for your office.</p>
+            <a href="#" class="link" onclick="return false;">Download &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTACT FORM ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title">Request a Representative Visit</h2>
+        <p class="section__sub">Demo form — no data is sent or stored anywhere.</p>
+
+        <form class="form" id="repForm" novalidate>
+          <div class="field">
+            <label for="fullName">Full name <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" />
+            <span class="error" id="fullNameError"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Professional email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+            <span class="error" id="emailError"></span>
+          </div>
+
+          <div class="field">
+            <label for="npi">NPI number (10 digits) <span class="req">*</span></label>
+            <input type="text" id="npi" name="npi" inputmode="numeric" maxlength="10" />
+            <span class="error" id="npiError"></span>
+          </div>
+
+          <div class="field">
+            <label for="specialty">Specialty <span class="req">*</span></label>
+            <select id="specialty" name="specialty">
+              <option value="">Select a specialty</option>
+              <option>Neurology</option>
+              <option>Pain Management</option>
+              <option>Primary Care</option>
+              <option>Psychiatry</option>
+              <option>Other</option>
+            </select>
+            <span class="error" id="specialtyError"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <div class="field field--check">
+            <label>
+              <input type="checkbox" id="consent" name="consent" />
+              I confirm that I am a licensed US healthcare professional.
+            </label>
+            <span class="error" id="consentError"></span>
+          </div>
+
+          <button type="submit" class="btn btn--full">Submit Request</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 10. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="footer-brand">NeuroCalm XR<sup>&reg;</sup></p>
+      <p class="footer-legal">
+        This is a fictional website created for demonstration and educational
+        purposes only. It is not affiliated with any real pharmaceutical company
+        and must not be used for clinical decision-making.
+      </p>
+      <p class="footer-copy">&copy; <span id="year">2025</span> Demo Pharma Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
